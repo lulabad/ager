@@ -6,6 +6,7 @@ defmodule Ager.Person do
   schema "person" do
     field :full_name, :string
     field :birthday, :date
+    field :age, :integer, virtual: true
   end
 
   def changeset(person, params) do
@@ -23,5 +24,6 @@ defmodule Ager.Person do
         order_by: p.full_name
 
     Ager.Repo.all(query)
+    |> Enum.map(fn x -> Map.put(x, :age, Ager.Utils.calculate_age(x.birthday)) end)
   end
 end

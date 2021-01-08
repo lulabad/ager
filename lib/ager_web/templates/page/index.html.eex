@@ -9,7 +9,7 @@
                             <%= p.full_name %>
                         </div>
                         <div class="col">
-                            <%= Ager.Utils.calculate_age(p.birthday) %>
+                            <%= p.age %>
                         </div>
                         <div class="col">
                             <%= p.birthday %>
