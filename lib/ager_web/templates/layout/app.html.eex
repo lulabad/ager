@@ -27,8 +27,11 @@
             </li>
           </ul>
           <%= form_for @conn, Routes.page_path(@conn, :index), [method: :get, class: "d-flex"], fn f -> %>
-            <%= search_input f, :query, class: "form-control me-2", placeholder: "Search" %>
-            <%= submit "Search", class: "btn btn-outline-success" %>
+            <div class="input-group">
+              <%= search_input f, :query, class: "form-control", placeholder: "Search" %>
+              <%= link "x", to: Routes.page_path(@conn, :index), class: "btn btn-outline-secondary" %>
+            </div>
+              <%= submit "Search", class: "btn btn-outline-success" %>
           <% end %>
         </div>
       </div>
