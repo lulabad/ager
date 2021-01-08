@@ -16,7 +16,7 @@ defmodule AgerWeb.Router do
   scope "/", AgerWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    resources "/", PageController
   end
 
   # Other scopes may use custom stacks.

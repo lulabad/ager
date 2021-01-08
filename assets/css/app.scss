@@ -1,6 +1,10 @@
 /* This file is for your main application css. */
-@import "./phoenix.css";
+// @import "./phoenix.css";
+@import "~bootstrap/scss/bootstrap";
 
+body {
+  font-family: 'Lato', sans-serif !important;
+}
 /* Alerts and form errors */
 .alert {
   padding: 15px;

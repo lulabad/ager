@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :ager, Ager.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "ager",
   database: "ager_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
@@ -16,7 +16,7 @@ config :ager, Ager.Repo,
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :ager, AgerWeb.Endpoint,
-  http: [port: 4000],
+  http: [port: 4100],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,

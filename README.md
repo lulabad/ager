@@ -2,8 +2,8 @@
 
 To start your Phoenix server:
 
-  * Setup the project with `mix setup`
-  * Start Phoenix endpoint with `mix phx.server`
+-   Setup the project with `mix setup`
+-   Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
@@ -11,8 +11,12 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 
 ## Learn more
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+-   Official website: https://www.phoenixframework.org/
+-   Guides: https://hexdocs.pm/phoenix/overview.html
+-   Docs: https://hexdocs.pm/phoenix
+-   Forum: https://elixirforum.com/c/phoenix-forum
+-   Source: https://github.com/phoenixframework/phoenix
+
+## Docker
+
+`docker run --name ager_dev -d -p 5432:5432 -e POSTGRES_PASSWORD=ager postgres:alpine`
