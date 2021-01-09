@@ -13,6 +13,12 @@ defmodule AgerWeb.Router do
     plug :accepts, ["json"]
   end
 
+  scope "/api", AgerWeb do
+    pipe_through :api
+
+    get "/search", Api.SearchController, :index
+  end
+
   scope "/", AgerWeb do
     pipe_through :browser
 

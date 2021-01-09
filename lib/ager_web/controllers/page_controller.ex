@@ -8,7 +8,7 @@ defmodule AgerWeb.PageController do
     render(conn, "index.html", persons: persons)
   end
 
-  defp search(params) do
+  def search(params) do
     search_term = get_in(params, ["query"])
 
     case search_term do
