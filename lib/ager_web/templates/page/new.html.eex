@@ -1,0 +1,16 @@
+<h2>New Person</h2>
+<%= form_for @changeset, Routes.page_path(@conn, :create), fn f -> %>
+    <div class="mb-3">
+        <%= label f, :full_name, class: "form-label" %>
+        <%= text_input f, :full_name, class: "form-control", required: "required" %>
+        <%= error_tag f, :full_name %>
+    </div>
+    <div class="mb-3">
+        <%= label f, :birthday, class: "form-label" %>
+        <%= date_input f, :birthday, class: "form-control" %>
+    </div>
+    <div class="mb-3">
+        <%= submit "Speichern", class: "btn btn-primary" %>
+        <%= link("Back", to: Routes.page_path(@conn, :index)) %>
+    </div>
+<% end %>

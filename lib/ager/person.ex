@@ -13,6 +13,7 @@ defmodule Ager.Person do
     person
     |> cast(params, [:full_name, :birthday])
     |> validate_required(:full_name)
+    |> unique_constraint(:full_name)
   end
 
   def search(search_term) do
