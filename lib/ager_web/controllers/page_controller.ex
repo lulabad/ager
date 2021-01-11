@@ -21,7 +21,7 @@ defmodule AgerWeb.PageController do
 
   def create(conn, %{"person" => person_params}) do
     case create_person(person_params) do
-      {:ok, person} ->
+      {:ok, _} ->
         conn
         |> put_flash(:info, "person created")
         |> redirect(to: Routes.page_path(conn, :index))

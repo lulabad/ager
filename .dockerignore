@@ -37,5 +37,13 @@ npm-debug.log
 results-birthday-service.json
 
 # Environment variables
-
 *.env
+
+# Ignore Dockerfile
+Dockerfile
+
+# Git ignore file
+.gitignore
+# To prevent storing dev/temporary container data
+*.csv
+tmp

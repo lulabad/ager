@@ -20,3 +20,7 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 ## Docker
 
 `docker run --name ager_dev -d -p 5432:5432 -e POSTGRES_PASSWORD=ager postgres:alpine`
+
+## Documentation for Docker
+
+https://danielwachtel.com/devops/dockerizing-a-phoenix-app-with-a-postgresql-database
