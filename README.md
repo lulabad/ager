@@ -23,4 +23,4 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 
 ## Documentation for Docker
 
-https://danielwachtel.com/devops/dockerizing-a-phoenix-app-with-a-postgresql-database
+<https://danielwachtel.com/devops/dockerizing-a-phoenix-app-with-a-postgresql-database>
